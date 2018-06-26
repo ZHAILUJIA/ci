@@ -9,12 +9,12 @@ import {MomentModule} from 'ngx-moment';
 import {Observable} from 'rxjs/Observable';
 import {Subject} from 'rxjs/Subject';
 
-import {CommonComponentsModule} from '../common/components/common-components.module';
+import {StatusIconModule} from '../common/components/status-icon/status-icon.module';
 import {ToolbarModule} from '../common/components/toolbar/toolbar.module';
 import {mockProject} from '../common/test_helpers/mock_project_data';
 import {Project} from '../models/project';
-import {DataService} from '../services/data.service';
 import {SharedMaterialModule} from '../root/shared_material.module';
+import {DataService} from '../services/data.service';
 
 import {ProjectComponent} from './project.component';
 
@@ -34,8 +34,8 @@ describe('ProjectComponent', () => {
     TestBed
         .configureTestingModule({
           imports: [
-            CommonComponentsModule, MomentModule, ToolbarModule,
-            RouterTestingModule, MatCardModule, MatTableModule
+            StatusIconModule, MomentModule, ToolbarModule, RouterTestingModule,
+            MatCardModule, MatTableModule
 
           ],
           declarations: [

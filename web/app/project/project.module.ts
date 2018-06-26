@@ -4,7 +4,7 @@ import {MatCardModule, MatTableModule} from '@angular/material';
 import {RouterModule} from '@angular/router';
 import {MomentModule} from 'ngx-moment';
 
-import {CommonComponentsModule} from '../common/components/common-components.module';
+import {StatusIconModule} from '../common/components/status-icon/status-icon.module';
 import {ToolbarModule} from '../common/components/toolbar/toolbar.module';
 import {DashboardComponent} from '../dashboard/dashboard.component';
 import {ProjectComponent} from '../project/project.component';
@@ -21,7 +21,7 @@ import {DataService} from '../services/data.service';
     /** Angular Library Imports */
     CommonModule,
     /** Internal Imports */
-    CommonComponentsModule, ToolbarModule,
+    StatusIconModule, ToolbarModule,
     /** Angular Material Imports */
     MatCardModule, MatTableModule,
     /** Third-Party Module Imports */
